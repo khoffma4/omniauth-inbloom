@@ -1,2 +1,2 @@
 require "omniauth-slc/version"
-require "omniauth/strategies/slc_sandbox"
+require "omniauth/strategies/slc-sandbox"
