@@ -4,7 +4,7 @@ require 'omniauth-oauth2'
 module OmniAuth
   module Strategies
     class SlcSandbox < OmniAuth::Strategies::OAuth2
-      option :name, "slc_sandbox"
+      option :name, "slc-sandbox"
 
       option :client_options, {:site => "https://api.sandbox.slcedu.org",
                                :authorize_url => 'api/oauth/authorize',
@@ -13,3 +13,5 @@ module OmniAuth
     end
   end
 end
+
+OmniAuth.config.add_camelization 'slc-sandbox', 'SlcSandbox'
