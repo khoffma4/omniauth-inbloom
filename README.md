@@ -16,15 +16,19 @@ And then execute:
 
 In your omniauth.rb initializer add the following:
 
+```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider :slc, ENV['SLC_KEY'], ENV['SLC_SECRET']
 end
+```
 
 To set up the slc sandbox provider, you can configure the slc provider as follows:
 
+```ruby
 provider :slc, ENV['SLC_KEY'], ENV['SLC_SECRET'], :setup => lambda{|env| 
    env['omniauth.strategy'].options[:client_options].site = 'https://api.sandbox.slcedu.org'
 }
+```
 
 ## Examples
 
