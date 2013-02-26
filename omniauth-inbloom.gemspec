@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'omniauth-slc/version'
+require 'omniauth-inbloom/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "omniauth-slc"
-  gem.version       = Omniauth::Slc::VERSION
+  gem.name          = "omniauth-inbloom"
+  gem.version       = Omniauth::Inbloom::VERSION
   gem.authors       = ["Kevin Hoffman"]
   gem.email         = ["khoffma4@gmail.com"]
   gem.description   = %q{Omniauth strategy for the Shared Learning Collaborative}
