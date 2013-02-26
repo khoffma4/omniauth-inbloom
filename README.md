@@ -32,7 +32,7 @@ provider :inbloom, ENV['INBLOOM_KEY'], ENV['INBLOOM_SECRET'], :setup => lambda{|
 
 ## Examples
 
-Please see https://github.com/khoffma4/slc-example for an example of how to use quickly get up and running with the Shared Learning Collaborative API.
+(**Outdated**) Please see https://github.com/khoffma4/slc-example for an example of how to use quickly get up and running with the Shared Learning Collaborative API.
 
 ## Contributing
 
