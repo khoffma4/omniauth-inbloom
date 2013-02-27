@@ -1,12 +1,12 @@
-# Omniauth::Slc
+# Omniauth::Inbloom
 
-An Omniauth strategy for authorizing with the Shared Learning Collaborative.
+An Omniauth strategy for authorizing with Inbloom (https://www.inbloom.org/).
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'omniauth-slc'
+    gem 'omniauth-inbloom'
 
 And then execute:
 
@@ -18,21 +18,21 @@ In your omniauth.rb initializer add the following:
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :slc, ENV['SLC_KEY'], ENV['SLC_SECRET']
+  provider :slc, ENV['INBLOOM_KEY'], ENV['INBLOOM_SECRET']
 end
 ```
 
 To set up the slc sandbox provider, you can configure the slc provider as follows:
 
 ```ruby
-provider :slc, ENV['SLC_KEY'], ENV['SLC_SECRET'], :setup => lambda{|env| 
-   env['omniauth.strategy'].options[:client_options].site = 'https://api.sandbox.slcedu.org'
+provider :inbloom, ENV['INBLOOM_KEY'], ENV['INBLOOM_SECRET'], :setup => lambda{|env|
+   env['omniauth.strategy'].options[:client_options].site = 'https://api.sandbox.inbloom.org'
 }
 ```
 
 ## Examples
 
-Please see https://github.com/khoffma4/slc-example for an example of how to use quickly get up and running with the Shared Learning Collaborative API.
+(**Outdated**) Please see https://github.com/khoffma4/slc-example for an example of how to use quickly get up and running with the Shared Learning Collaborative API.
 
 ## Contributing
 
