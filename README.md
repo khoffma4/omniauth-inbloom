@@ -18,7 +18,7 @@ In your omniauth.rb initializer add the following:
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :slc, ENV['INBLOOM_KEY'], ENV['INBLOOM_SECRET']
+  provider :inbloom, ENV['INBLOOM_KEY'], ENV['INBLOOM_SECRET']
 end
 ```
 
