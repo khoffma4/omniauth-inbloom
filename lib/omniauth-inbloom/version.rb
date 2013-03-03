@@ -1,5 +1,5 @@
 module Omniauth
-  module Slc
+  module Inbloom
     VERSION = "0.0.2"
   end
 end
